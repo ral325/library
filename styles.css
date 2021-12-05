@@ -2,6 +2,10 @@ table, th, td {
     border: 1px solid black;
 }
 
+table {
+    margin: auto;
+}
+
 th, td {
     margin: 10px;
     padding-left: 10px;
@@ -15,8 +19,26 @@ th, td {
 
 .add-book{
     width: 200px;
-    margin: 10px;
+    margin: 5px;
     text-align: center;
+}
+
+#add-cell{
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+}
+
+.popup button{
+    width: 200px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    align-self: center;
+    justify-content: right;
+    display: flex;
 }
 
  /* Popup container */
@@ -28,9 +50,11 @@ th, td {
     top: 50%;
     left: 50%;
     width: 30vw;
-    height: 30vh;
     margin-left: -15vw;
     margin-top: -15vh;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
   }
   
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
