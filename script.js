@@ -11,7 +11,8 @@ class Book {
 
 let LibraryTable = document.querySelector("table");
 let addButton = document.querySelector(".add-book");
-addButton.addEventListener("click", createBookAndAddToLibrary);
+addButton.addEventListener("click", openBookCreationWindow);
+let popup = document.querySelector(".popup");
 
 function addBookToLibrary(book) {
     console.log("Adding book: " + book.title)
@@ -43,8 +44,8 @@ function deleteBook() {
     LibraryTable.deleteRow(rowIndexToDelete);
 }
 
-function createBookAndAddToLibrary() {
-    prompt
+function openBookCreationWindow() {
+    popup.classList.toggle("show");
 }
 
 // test items
